@@ -1,0 +1,40 @@
+@import "../../../variable.scss";
+.home-page-wrapper{
+   
+    .image-container{
+       height: 449px;
+       margin-top: 3px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .home-page-content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 56px;
+        padding-bottom: 40px;
+        h2{
+            font-size: 38px;
+            font-weight: 400;
+            color: $black;
+            margin-bottom: 24px;
+        }
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            width: 1046px;
+            margin-bottom: 40px;
+        }
+        .home-page-btn{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}

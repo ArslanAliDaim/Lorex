@@ -1,0 +1,103 @@
+@import "../../../variable.scss";
+.devices-wrapper{
+    height: calc(100vh - 80px );
+    padding: 88px 75px ;
+    .device-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 42px;
+        
+        .device-nav-text{
+            h3{
+                font-size: 28px;
+                color: $black;
+                font-weight: 400;
+            }
+            p{
+                font-size: 19px;
+                color: $black;
+            }
+        }
+        .device-btn{
+            button{
+                padding: 12px 42px;
+                border: 3px solid $dark-color;
+                background: transparent;
+                border-radius: 10px;
+                font-size: 18px;
+                color: $dark-color;
+            }
+        }
+    }
+    .devices-card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 270px);
+        gap: 20px;
+        .device-card{
+            border: 1px solid $secondary-color-gray;
+            background-color: $primary-color-bg-light;
+            border-radius: 8px;
+            padding: 28px;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 20px;
+            .card-text{
+                p{
+                    font-size: 20px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+        input[type=checkbox] {
+            position: relative;
+              border: 2px solid $span-color;
+              border-radius: 50px;
+              background: none;
+              cursor: pointer;
+              line-height: 0;
+              outline: 0;
+              padding: 0;
+              vertical-align: text-top;
+              height: 30px;
+              width: 30px;
+              -webkit-appearance: none;
+            opacity: .5;
+            margin-left: 40px;
+          }
+          
+          input[type=checkbox]:hover {
+            opacity: 1;
+          }
+          
+          input[type=checkbox]:checked {
+            background-color: $span-color;
+            opacity: 1;
+          }
+          
+          input[type=checkbox]:before {
+            content: '';
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 6px;
+            height: 14px;
+            border: solid $white-color;
+            border-width: 0 3px 3px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+          }
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 68px;
+    }
+}

@@ -1,0 +1,135 @@
+@import "../../../../variable.scss";
+
+.login-container{
+    background-image: url(../../../../assets/images/daniel-von-appen-DF3NtSsKu2g-unsplash.jpg);
+    object-fit: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.login-heading{
+    width: 790px;
+    background-color: $white-color;
+    border-radius: 12px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+h1{
+    font-size: 28px;
+    color: $black;
+    margin-bottom: 8px;
+        
+    }
+p{
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: $black;
+        
+    }
+}
+
+}
+.foarm-wrapper{
+    max-width: 412px;
+    width: 100%;
+.input-inner{
+    margin-bottom: 14px;
+    position: relative;
+    .custom-input{
+    width: 100%;
+    padding: 16px 16px 16px 46px;
+    border: 1px solid $secondary-color-gray;
+    background-color: transparent;
+    border-radius: 4px;
+    &:focus-visible{
+        outline: none;
+    }
+    }
+    .input-icon{
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        
+    }
+    .input-icon-eye{ 
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+       
+    }
+}
+.form-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .form-group label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 100%;
+    background-color: $span-color;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .form-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    width: 6px;
+    height: 14px;
+    border: solid $white-color;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+.signup-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    a{
+        text-decoration: underline;
+        font-size: 17px;
+    }
+}
+}

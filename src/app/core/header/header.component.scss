@@ -1,0 +1,24 @@
+
+@import "../../../variable.scss";
+
+.header{
+    background-color: $header-bg;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 74px;
+    .logo{
+    font-size: 30px;
+    color: $white-color;
+    }
+    .header-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+       
+
+    }
+}
